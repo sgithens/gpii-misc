@@ -19,8 +19,10 @@ as follows:
 * type (optionally sparse) - JSON Schema type
 * enum (optionally sparse) - If the type is an enum these are the choices
 * enumLabels (optionally sparse) - The labels for an enum if present
-* minValue (optionally sparse) - `minValue` for `number` types.
-* maxValue (optionally sparse) - `maxValue` for `number` types.
+* minimum (optionally sparse) - `minimum` for `number` types.
+* maximum (optionally sparse) - `maximum` for `number` types.
+* oneOf (optionally sparse) - `oneOf` for slightly more complex JSON schemas that allow
+  the follow to be validated among a list of possibilities.
 * multipleOf (optionally sparse) - `multipleOf` for `number` types.
 * schema - Entire JSON schema for this setting, which the above columns have been
   extracted from. In the event of more complex settings, it may be necessary to view

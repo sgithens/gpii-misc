@@ -21,8 +21,9 @@ jq '[. | to_entries[] | {
     type: .setting.value.schema.type?,
     enum: .setting.value.schema.enum?,
     enumLabels: .setting.value.schema.enumLabels?,
-    minValue: .setting.value.schema.minValue?,
-    maxValue: .setting.value.schema.maxValue?,
+    minimum: .setting.value.schema.minimum?,
+    maximum: .setting.value.schema.maximum?,
+    oneOf: .setting.value.schema.oneOf?,
     multipleOf: .setting.value.schema.multipleOf?,
     schema: .setting.value.schema
 }]' < win32.json > out.json
